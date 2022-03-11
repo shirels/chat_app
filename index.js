@@ -21,6 +21,7 @@ app.use(async (req,res, next)=>{
     next()
 })
 
+
 //rout for GET request 
 //retrieving the messages for the recipient inclued in the request body
 app.get('/api/', (req,res)=>{
@@ -33,6 +34,7 @@ app.get('/api/', (req,res)=>{
         res.status(400).send({err: "Sorry, your details are not in the system"})
     }   
 })
+
 
 //rout for POST request with data inclueded in the request body
 //sending a message to another person
